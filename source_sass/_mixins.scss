@@ -1,1 +1,60 @@
-// Insert your mixins
+@mixin vertical-align($position: relative) {
+	position: $position;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+@mixin background-size($background-size: cover) {
+	-webkit-background-size: $background-size;
+    -moz-background-size: $background-size;
+    -o-background-size: $background-size;
+    background-size: $background-size;
+}
+
+@mixin border-box-sizing {
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+@mixin column {
+	float: left;
+    min-height: 1px; 	
+}
+
+@mixin title-style {
+	font-family: $font-primary;
+	font-size: 25px;
+	letter-spacing: 10px;
+}
+
+@mixin body-style {
+	font-family: $font-secondary;
+	line-height: 1.2em;
+	font-size: 18px;
+}
+
+@mixin night-and-day-gradient($opacity: 1) {
+	background: #2c3e50;
+	background: -webkit-linear-gradient(right, rgba(44, 62, 80, $opacity), rgba(52, 152, 219, $opacity));
+	background: linear-gradient(right, rgba(44, 62, 80, $opacity), rgba(52, 152, 219, $opacity));
+}
+
+@mixin portrait-gradient($opacity: 1) {
+	background: #8e9eab;
+	background: -webkit-linear-gradient(right, rgba(142, 158, 171, 1), rgba(238, 242, 243, 1));
+	background: linear-gradient(right, rgba(142, 158, 171, 1), rgba(238, 242, 243, 1));
+}
+
+@mixin pinot-noir-gradient($opacity: 1) {
+	background: #4b6cb7; /* fallback for old browsers */
+	background: -webkit-linear-gradient(rgba(37, 54, 91, 1), rgba(12, 20, 36, 1));
+	background: linear-gradient(rgba(37, 54, 91, 1), rgba(12, 20, 36, 1));
+}
+
+@mixin transition($time: 1s) {
+	transition: all $time;
+	-moz-transition: all $time;
+	-webkit-transition: all $time;
+	-o-transition: all $time;
+}
