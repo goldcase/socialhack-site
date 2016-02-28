@@ -58,3 +58,8 @@
 	-webkit-transition: all $time;
 	-o-transition: all $time;
 }
+
+@mixin full-screen {
+	height: 100vh;
+	width: 100vw;
+}
