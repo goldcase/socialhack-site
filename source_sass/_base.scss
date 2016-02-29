@@ -1,8 +1,25 @@
+body {
+	margin-top: 2rem;
+	background: #111;
+	color: $flat-gray-1;
+	font-family: $font-primary;
+	margin: 0;
+}
+
+.container {
+	margin: 0 auto;
+}
+
+.main {
+	position: relative;
+	top: 100vh;
+}
+
 // Particle effect CSS.
 #particles {
 	@include full-screen();
 	overflow: hidden;
-	background-image: linear-gradient(rgba(0, 21, 42, 0.85), rgba(0, 21, 42, 0.65)), url('../media/ox_pulling_cart-min.JPG');
+	background-image: linear-gradient(rgba(0, 21, 42, 0.85), rgba(0, 21, 42, 0.65)), url('../media/barbed_wire-min.JPG');
 	@include background-size();
 	position: absolute;
 	top: 0;
@@ -23,16 +40,23 @@
 
 h1 {
 	font-family: $font-primary;
-	font-size: 30px;
+	font-size: 6rem;
+}
+
+h5 {
+	font-family: $font-primary;
+	font-size: 0.8rem;
+}
+
+.subtitle {
+	font-family: $font-primary;
+	font-size: 1rem;
+	letter-spacing: 1rem;
+	position: relative;
+	top: -10px;
 }
 
 // Citation: https://zurb.com/expo/lessons/how-to-re-create-top-bar-with-foundation-6
-body {
-	margin-top: 2rem;
-	background: #111;
-	color: $flat-gray-1;
-}
-
 .title-bar {
   // background: $menu-background;
   background: none;
