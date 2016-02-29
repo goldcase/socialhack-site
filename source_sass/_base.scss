@@ -20,17 +20,27 @@ body {
 	top: 100vh;
 	text-align: center;
 	width: 100%;
+	z-index: 40;
 }
 
 .quote {
 	font-family: $font-hand;
 	font-size: 3rem;
 	color: $flat-yellow-1;
+	// background-attachment: fixed;
+	height: 33vh;
+	background: none;
+}
+
+.grandmother {
 	background-image: linear-gradient(rgba(41, 33, 2, 0.5), rgba(82, 66, 2, 0.8)), url("../media/grandmother_village-min.JPG");
 	@include background-size();
 	background-position: center center;
-	// background-attachment: fixed;
-	height: 33vh;
+	position: fixed;
+	top: 0px;
+	height: 100vh;
+	width: 100vw;
+	z-index: 0;
 }
 
 section {
