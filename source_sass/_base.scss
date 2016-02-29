@@ -1,23 +1,40 @@
+@import url('http://fonts.googleapis.com/css?family=Montserrat|Lora|Amatic+SC');
+@import url('http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
+
 body {
 	margin-top: 2rem;
 	background: #111;
 	color: $flat-gray-1;
 	font-family: $font-primary;
 	margin: 0;
+	overflow-x: hidden;
 }
 
 .container {
-	margin: 0 auto;
+	// margin: 0 auto;
+	width: 100%;
 }
 
 .main {
 	position: relative;
 	top: 100vh;
 	text-align: center;
+	width: 100%;
+}
+
+.quote {
+	font-family: $font-hand;
+	font-size: 3rem;
+	color: $flat-yellow-1;
+	background-image: linear-gradient(rgba(41, 33, 2, 0.5), rgba(82, 66, 2, 0.8)), url("../media/grandmother_village-min.JPG");
+	@include background-size();
+	background-position: center center;
+	// background-attachment: fixed;
+	height: 33vh;
 }
 
 section {
-	margin: 20px auto;
+	padding: 20px; 
 }
 
 h1 {
@@ -35,9 +52,25 @@ h2 {
 	letter-spacing: 0.5rem;
 }
 
+h3 {
+	font-family: $font-primary;
+	font-size: 1rem;
+}
+
 h5 {
 	font-family: $font-primary;
 	font-size: 0.8rem;
+}
+
+p {
+	color: $flat-gray-1;
+}
+
+.section-content {
+	// margin: 20px auto;
+	padding: 40px;
+	height: 100%;
+	// @include vertical-align();
 }
 
 .subtitle {
@@ -54,12 +87,42 @@ h5 {
 	}
 }
 
+.about {
+	background-color: $light-blue-gray;
+	width: 100%;
+
+	h2 {
+		color: #2c3e50;
+		margin-bottom: 20px;
+	}
+
+	h3 {
+		color: #34495e;
+		font-size: 1.2rem;
+	}
+
+	p {
+		color: $lynch-gray;
+	}
+}
+
+.more-info {
+	@include full-screen();
+	// background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.3)), url("../media/ox_pulling_cart-min-blur.JPG");
+	background-image: linear-gradient(rgba(0, 10, 21, 0.55), rgba(0, 21, 42, 0.35)), url("../media/ox_pulling_cart-min-blur.JPG");
+	@include background-size();
+	background-position: center center;
+}
+
 // Particle effect CSS.
 #particles {
 	@include full-screen();
 	overflow: hidden;
-	background-image: linear-gradient(rgba(0, 21, 42, 0.85), rgba(0, 21, 42, 0.65)), url('../media/barbed_wire-min.JPG');
+	// background-image: linear-gradient(rgba(0, 21, 42, 0.85), rgba(0, 21, 42, 0.65)), url('../media/barbed_wire-min.JPG');
+	background-image: linear-gradient(rgba(0, 21, 42, 0.85), rgba(0, 21, 42, 0.65)), url('../media/slum-min.JPG');
 	@include background-size();
+	background-position: center center;
+	// background-attachment: fixed;
 	position: absolute;
 	top: 0;
 }
@@ -81,7 +144,8 @@ h5 {
 // Citation: https://zurb.com/expo/lessons/how-to-re-create-top-bar-with-foundation-6
 .title-bar {
   // background: $menu-background;
-  background: none;
+  // background: rgba(255, 255, 255, 0.2);
+  background: rgba(0, 0, 0, 0.5);
   padding: 0.9rem;
   position: fixed;
   top: 0px;
@@ -91,7 +155,9 @@ h5 {
 
 .top-bar {
   // background: $menu-background;
-  background: none;
+  // background: none;
+  // background: rgba(255, 255, 255, 0.2);
+  background: rgba(0, 0, 0, 0.5);
   position: fixed;
   top: 0px;
   width: 100vw;
@@ -100,10 +166,12 @@ h5 {
   ul {
     // background: $menu-background;
 	  background: none;
+	  // background: rgba(255, 255, 255, 0.2);
   
     li {
       // background: $menu-background;
-	  background: none;
+	  // background: rgba(0, 0, 0, 0.3);
+	  // background: rgba(255, 255, 255, 0.2);
     
         a {
           color: #fff;
