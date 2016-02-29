@@ -13,6 +13,45 @@ body {
 .main {
 	position: relative;
 	top: 100vh;
+	text-align: center;
+}
+
+section {
+	margin: 20px auto;
+}
+
+h1 {
+	font-family: $font-primary;
+	font-size: 6rem;
+
+	@include breakpoint(small only) {
+		font-size: 15vmin;
+	}
+}
+
+h2 {
+	font-family: $font-primary;
+	font-size: 1.5rem;	
+	letter-spacing: 0.5rem;
+}
+
+h5 {
+	font-family: $font-primary;
+	font-size: 0.8rem;
+}
+
+.subtitle {
+	font-family: $font-primary;
+	position: relative;
+	top: -13px;
+	font-size: 1rem;
+	letter-spacing: 1rem;
+
+	@include breakpoint(small only) {
+		font-size: 3vmin;
+		letter-spacing: 2vmin;
+		top: -8px;
+	}
 }
 
 // Particle effect CSS.
@@ -38,24 +77,7 @@ body {
 	@include vertical-align();
 }
 
-h1 {
-	font-family: $font-primary;
-	font-size: 6rem;
-}
-
-h5 {
-	font-family: $font-primary;
-	font-size: 0.8rem;
-}
-
-.subtitle {
-	font-family: $font-primary;
-	font-size: 1rem;
-	letter-spacing: 1rem;
-	position: relative;
-	top: -10px;
-}
-
+// Responsive navigation bar CSS.
 // Citation: https://zurb.com/expo/lessons/how-to-re-create-top-bar-with-foundation-6
 .title-bar {
   // background: $menu-background;
