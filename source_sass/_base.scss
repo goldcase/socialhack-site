@@ -355,7 +355,11 @@ footer {
     
         a {
           color: #fff;
-      }
+
+          .active {
+			color: $flat-orange-2;
+          }
+	    }
     }
   }
 }

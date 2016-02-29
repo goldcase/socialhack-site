@@ -38,15 +38,21 @@ $(document).ready(function(){
    * Also highlights current position on navigation bar.
    */
 
-   var nav_children = $(".menu ul").children("li");
+   var nav_children = $(".menu").children("li");
+   console.log(nav_children);
 
    var li_array = nav_children.get();
+   console.log(li_array);
 
    var anchor_children = nav_children.children("a");
 
-     var anchors = anchor_children.map(function() {
+   var anchors = anchor_children.map(function() {
     return $(this).attr("href");
-   }).get();
+   }).get().filter(function(elem, idx) {
+    return elem != "#";
+   });
+
+   console.log(anchors);
 
    var tops = anchors.map(function(currentVal) {
     return Number($(currentVal).offset().top);
@@ -79,6 +85,9 @@ $(document).ready(function(){
         console.log("activating " + Number(idx+1));
         $(nav_children).removeClass("active");
         $(nav_children[idx+1]).addClass("active");
+
+        // $(anchor_children).removeClass("active");
+        // $(anchor_children[idx+1]).addClass("active");
       }
       //  else {
       //  $(nav_children[idx+1]).removeClass("active");
@@ -89,6 +98,8 @@ $(document).ready(function(){
    changePositionIndicator();
 
   $(document).on("scroll", function() {
+    changePositionIndicator();
+
     if ($(document).scrollTop() > 80) {
       console.log("Scroll event detected.");
       $(".title-bar").removeClass("large").addClass("small");
