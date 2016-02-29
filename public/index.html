@@ -7,6 +7,8 @@
 
   <!-- Stylesheets -->
   <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="./lib/owlcarousel/owl-carousel/owl.carousel.css">
+  <link rel="stylesheet" href="./lib/owlcarousel/owl-carousel/owl.theme.css">
 </head>
 
 <body>
@@ -23,16 +25,11 @@
     </div>
     <div class="top-bar-right">
       <ul class="menu" data-responsive-menu="drilldown medium-dropdown">
-        <li class="has-submenu"><a href="#">DETAILS</a>
-          <ul class="submenu menu vertical" data-submenu>
-            <li><a href="#">FAQ</a></li>
-            <li><a href="#">RULES</a></li>
-            <li><a href="#">TERMS OF USE</a></li>
-          </ul>
-        </li>
+        <li><a href="#">ABOUT</a></li>
+        <li><a href="#">DETAILS</a></li>
         <li><a href="#">PRIZES</a></li>
-        <li><a href="#">SPONSORS</a></li>
-        <li><a href="#">MENTORS</a></li>
+        <li><a href="#">TRAILER</a></li>
+        <li><a href="#">JUDGES</a></li>
         <li><a href="#">CONTACT US</a></li>
       </ul>
     </div>
@@ -50,10 +47,9 @@
     <li><a href="#">CONTACT US</a></li>
   </ul> -->
 <div class="container">
-  <div class="grandmother">
-  </div>
-  <div id="particles">
-  </div>
+  <div class="grandmother"></div>
+  <div id="particles-bg"></div>
+  <div id="particles"></div>
   <div id="splash">
     <div class="row text-center vertical-align">
       <h1>
@@ -107,7 +103,7 @@
   <section class="more-info">
     <div class="row vertical-align">
       <h2>
-        MORE INFORMATION
+        DETAILS
       </h2>
       <ul class="vertical menu" data-accordion-menu>
         <li>
@@ -155,44 +151,37 @@
   </section>
 
 
-  <section class="row">
-    <h2>PRIZES</h2>
-    <div class="columns small-12 large-12">
-      <h3>
-        FIRST PRIZE
-      </h3>
-      <div class="prizes">
-        <ul>
-          <li class="money"></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
+  <section class="prizes">
+    <div class="section-content">
+    <div class="vertical-align">
+      <h2>PRIZES</h2>
+      <div class="owl-carousel">
+          <div class="prize-tile">
+            <h3>FIRST PLACE</h3>
+              <ul>
+                <li class="money">$3,000 in prize money</li>
+                <li>Do I wanna know</li>
+                <li>If this feeling flows both ways</li>
+                <li>Sad to see you go, was sorta hopin' that you'd stay</li>
+              </ul>
+          </div>
+           <div class="prize-tile">
+            <h3>SECOND PLACE</h3>
+              <ul>
+                <li class="money">$3,000 in prize money</li>
+                <li>Maybe I'm too busy being yours to fall for somebdy new</li>
+                <li>Now I thought it through</li>
+                <li>Crawlin back to you</li>
+              </ul>
+          </div>
+         <div class="prize-tile">
+            <h3>THIRD PLACE</h3>
+              <ul>
+                <li class="money">$3,000 in prize money</li>
+                <li>So have you got the guts?</li>
+            </ul>
+          </div>
       </div>
-    </div>
-    <div class="columns small-12 large-6">
-      <h3></h3>
-      <div class="prizes">
-        <ul>
-          <li class="money"></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
-      </div>
-    </div>
-    <div class="columns small-12 large-6">
-      <h3></h3>
-      <div class="prizes">
-        <ul>
-          <li class="money"></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
       </div>
     </div>
   </section>
@@ -205,9 +194,80 @@
   </div>
   </section>
 
-  <section>
-    
+  <section class="trailer">
+  <div class="section-content">
+  <div class="vertical-align">
+    <h2>
+      TRAILER
+    </h2>
+    <div class="flex-video">
+      <video src="./media/madhu_video.mp4" type="video/mp4" controls></video>
+    </div>
+  </div>
+  </div>
   </section>
+
+  <section class="quote">
+  <div class="section-content">
+    <div class="column row vertical-align">
+      RISE AND GRIND
+    </div>
+  </div>
+  </section>
+
+  <section class="judges">
+    <div class="section-content">
+      <div class="vertical-align">
+        <h2>JUDGES</h2>
+        <div class="row">
+          <div class="column small-centered small-3">
+          <a data-open="madhu_modal">
+            <img src="./media/madhu_thumbnail.png" alt="Professor Madhu Viswanathan">
+          </a>
+          <div class="reveal" id="madhu_modal" data-reveal>
+            <button class="close-button" data-close aria-label="Close modal" type="button">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <img src="./media/madhu.jpg" alt="Professor Madhu Viswanathan" class="grayscale">
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="hosts">
+    <div class="section-content">
+      <div class="vertical-align">
+        <h2>HOSTED BY</h2>
+        <div class="row">
+          <div class="column small-12 medium-6 large-6">
+            <img src="./media/ewob_logo.png" alt="Entrepreneurs Without Borders" class="grayscale">
+          </div>
+          <div class="column small-12 medium-6 large-6">
+            <img src="./media/founders_logo.png" alt="Entrepreneurs Without Borders" class="grayscale">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact">
+    <div class="section-content">
+      <div class="vertical-align">
+        <h2>CONTACT US</h2>
+        <div class="row">
+          <h3>Reach out to us. We'd love to hear from you.</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>
+      Some footer things. Copyright, work work work work work work.
+    </p>
+  </footer>
 
   </div>
 
@@ -216,6 +276,7 @@
   
   <script src="./lib/jquery-2.1.3.min/index.js"></script>
   <script src="./foundation6_lib/js/foundation.min.js"></script>
+  <script src="./lib/owlcarousel/owl-carousel/owl.carousel.min.js"></script>
   <script src="./lib/jquery.particleground.min/index.js"></script>
   <script src="./js/script.js"></script>
   <script>

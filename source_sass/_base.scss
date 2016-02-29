@@ -124,17 +124,113 @@ p {
 	background-position: center center;
 }
 
+.prizes {
+	@include full-screen();
+	background-image: linear-gradient(rgba(0, 10, 21, 0.75), rgba(0, 21, 42, 0.55)), url("../media/boy_in_village.JPG");
+	@include background-size();
+	background-position: center center;
+}
+
+.prize-tile {
+	ul{
+		li{
+			list-style-type: none;
+		}
+	}
+}
+
+.trailer {
+	@include full-screen();
+	background-image: linear-gradient(rgba(41, 33, 2, 0.5), rgba(82, 66, 2, 0.8)), url("../media/seeds_blurred.JPG");
+	@include background-size();
+	background-position: center center;
+
+}
+
+.judges {
+	@include full-screen();
+	background-image: linear-gradient(rgba(41, 33, 2, 0.5), rgba(82, 66, 2, 0.8)), url("../media/boy_running.jpg");
+	@include background-size();
+	background-position: center center;
+}
+
+.hosts {
+	height: 33vh;
+	// background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.4));
+	background: $light-blue-gray;
+
+	h2 {
+		color: $flat-blue-4;
+	}
+}
+
+.contact {
+	@include pinot-noir-gradient();
+	height: 600px;
+
+	h2 {
+		color: $flat-gray-1;
+	}
+
+	.subtitle {
+		p {
+			color: $light-blue-gray;
+			font-size: 18px;
+			letter-spacing: 0px;
+		}
+	}
+
+	p {
+		color: $flat-gray-3;
+		margin: 10px 0;
+
+		i {
+			margin: 20px 30px;
+		}
+	}
+
+}
+
+footer {
+	height: 100px;
+	background-color: rgba(12, 20, 36, 1);
+	color: $flat-gray-1;
+	font-family: $font-primary;
+}
+
+#particles-bg {
+	background-image: linear-gradient(rgba(0, 21, 42, 0.85), rgba(0, 21, 42, 0.65)), url('../media/slum-min.JPG');
+	@include full-screen();
+	@include background-size();
+	background-position: center center;
+	position: absolute;
+	top: 0;
+}
+
 // Particle effect CSS.
 #particles {
 	@include full-screen();
 	overflow: hidden;
 	// background-image: linear-gradient(rgba(0, 21, 42, 0.85), rgba(0, 21, 42, 0.65)), url('../media/barbed_wire-min.JPG');
-	background-image: linear-gradient(rgba(0, 21, 42, 0.85), rgba(0, 21, 42, 0.65)), url('../media/slum-min.JPG');
-	@include background-size();
-	background-position: center center;
-	// background-attachment: fixed;
+	background: none;
 	position: absolute;
 	top: 0;
+
+	opacity: 0;
+
+	animation-duration: 5s;
+	animation-fill-mode: forwards;
+	animation-name: fadein;
+
+	@keyframes fadein {
+		from {
+			opacity: 0;
+		}
+
+		to {
+			opacity: 1;
+		}
+	}
 }
 
 #splash {
@@ -144,14 +240,80 @@ p {
 	position: absolute;
 	top: 0;
 	color: $white;
+
+	// background-attachment: fixed;
+
+	h1 {
+		opacity: 0;
+		text-align: center;
+
+		position: relative;
+		top: -50px;
+
+		animation-delay: 2s;
+		animation-duration: 3s;
+		animation-fill-mode: forwards;
+		animation-name: fadein;
+	}	
+
+	@keyframes fadein {
+		from {
+			opacity: 0;
+			top: -50px;
+		}
+
+		to {
+			opacity: 1;
+			top: 0px;
+		}
+	}
 }
+
+// Class styles for convenience.
 
 .vertical-align {
 	@include vertical-align();
 }
 
+.grayscale {
+    @include grayscale_element(100%);
+    transition: all 200ms ease-in-out;
+    &:hover {
+        @include grayscale_element(0);
+    }
+}
+
 // Responsive navigation bar CSS.
 // Citation: https://zurb.com/expo/lessons/how-to-re-create-top-bar-with-foundation-6
+
+.top-bar, .title-bar{
+	@include transition(0.5s);
+}
+
+.large {
+	font-size: 16px;
+	padding: 0.7rem;
+
+	.menu-text {
+		height: 2rem; 
+		width: auto;
+		//@include vertical-align();
+		margin-left: 10px;
+	}
+}
+
+.small {
+	font-size: 14px;
+	padding: 0.25rem;
+
+	.menu-text {
+		height: 1.5rem;
+		width: auto;
+		//@include vertical-align();
+		margin-left: 10px;
+	}
+}
+
 .title-bar {
   // background: $menu-background;
   // background: rgba(255, 255, 255, 0.2);

@@ -63,3 +63,10 @@
 	height: 100vh;
 	width: 100vw;
 }
+
+// Citation: From StackOverflow: http://stackoverflow.com/questions/19562014/css-function-in-mixin-grayscale
+@mixin grayscale_element($value) {
+    -webkit-filter: #{"grayscale(#{$value})"};
+    -moz-filter: #{"grayscale(#{$value})"};
+    filter:#{"grayscale(#{$value})"};
+}
