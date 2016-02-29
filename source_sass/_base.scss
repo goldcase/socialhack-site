@@ -33,7 +33,7 @@ body {
 }
 
 .grandmother {
-	background-image: linear-gradient(rgba(41, 33, 2, 0.5), rgba(82, 66, 2, 0.8)), url("../media/grandmother_village-min.JPG");
+	background-image: linear-gradient(rgba(41, 33, 2, 0.5), rgba(82, 66, 2, 0.8)), url("../media/grandmother_village-min-1920.JPG");
 	@include background-size();
 	background-position: center center;
 	position: fixed;
@@ -97,7 +97,7 @@ p {
 	}
 }
 
-.about {
+#about {
 	background-color: $light-blue-gray;
 	width: 100%;
 
@@ -116,17 +116,17 @@ p {
 	}
 }
 
-.more-info {
+#more-info {
 	@include full-screen();
-	// background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.3)), url("../media/ox_pulling_cart-min-blur.JPG");
-	background-image: linear-gradient(rgba(0, 10, 21, 0.55), rgba(0, 21, 42, 0.35)), url("../media/ox_pulling_cart-min-blur.JPG");
+	// background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.3)), url("../media/ox_pulling_cart-min-blur-1920.JPG");
+	background-image: linear-gradient(rgba(0, 10, 21, 0.55), rgba(0, 21, 42, 0.35)), url("../media/ox_pulling_cart-min-blur-1920.JPG");
 	@include background-size();
 	background-position: center center;
 }
 
-.prizes {
+#prizes {
 	@include full-screen();
-	background-image: linear-gradient(rgba(0, 10, 21, 0.75), rgba(0, 21, 42, 0.55)), url("../media/boy_in_village.JPG");
+	background-image: linear-gradient(rgba(0, 10, 21, 0.75), rgba(0, 21, 42, 0.55)), url("../media/boy_in_village-1920.JPG");
 	@include background-size();
 	background-position: center center;
 }
@@ -139,22 +139,22 @@ p {
 	}
 }
 
-.trailer {
+#trailer {
 	@include full-screen();
-	background-image: linear-gradient(rgba(41, 33, 2, 0.5), rgba(82, 66, 2, 0.8)), url("../media/seeds_blurred.JPG");
+	background-image: linear-gradient(rgba(41, 33, 2, 0.5), rgba(82, 66, 2, 0.8)), url("../media/seeds_blurred-1920.JPG");
 	@include background-size();
 	background-position: center center;
 
 }
 
-.judges {
+#judges {
 	@include full-screen();
-	background-image: linear-gradient(rgba(41, 33, 2, 0.5), rgba(82, 66, 2, 0.8)), url("../media/boy_running.jpg");
+	background-image: linear-gradient(rgba(41, 33, 2, 0.5), rgba(82, 66, 2, 0.8)), url("../media/boy_running-1920.JPG");
 	@include background-size();
 	background-position: center center;
 }
 
-.hosts {
+#hosts {
 	height: 33vh;
 	// background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.4));
 	background: $light-blue-gray;
@@ -164,7 +164,7 @@ p {
 	}
 }
 
-.contact {
+#contact {
 	@include pinot-noir-gradient();
 	height: 600px;
 
@@ -199,7 +199,7 @@ footer {
 }
 
 #particles-bg {
-	background-image: linear-gradient(rgba(0, 21, 42, 0.85), rgba(0, 21, 42, 0.65)), url('../media/slum-min.JPG');
+	background-image: linear-gradient(rgba(0, 21, 42, 0.85), rgba(0, 21, 42, 0.65)), url('../media/slum-min-1920.JPG');
 	@include full-screen();
 	@include background-size();
 	background-position: center center;
@@ -211,7 +211,7 @@ footer {
 #particles {
 	@include full-screen();
 	overflow: hidden;
-	// background-image: linear-gradient(rgba(0, 21, 42, 0.85), rgba(0, 21, 42, 0.65)), url('../media/barbed_wire-min.JPG');
+	// background-image: linear-gradient(rgba(0, 21, 42, 0.85), rgba(0, 21, 42, 0.65)), url('../media/barbed_wire-min-1920.JPG');
 	background: none;
 	position: absolute;
 	top: 0;
@@ -285,6 +285,14 @@ footer {
 
 // Responsive navigation bar CSS.
 // Citation: https://zurb.com/expo/lessons/how-to-re-create-top-bar-with-foundation-6
+
+.menu {
+	ul {
+		.active {
+			color: $flat-orange-2;
+		}
+	}
+}
 
 .top-bar, .title-bar{
 	@include transition(0.5s);
