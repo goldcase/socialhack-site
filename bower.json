@@ -14,6 +14,7 @@
     "tests"
   ],
   "dependencies": {
-    "jquery-2.1.3.min": "http://code.jquery.com/jquery-2.1.3.min.js"
+    "jquery-2.1.3.min": "http://code.jquery.com/jquery-2.1.3.min.js",
+    "jquery.particleground.min": "https://raw.githubusercontent.com/jnicol/particleground/master/jquery.particleground.min.js"
   }
 }

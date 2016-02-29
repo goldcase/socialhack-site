@@ -17,10 +17,10 @@
     box-sizing: border-box;
 }
 
-@mixin column {
-	float: left;
-    min-height: 1px; 	
-}
+// @mixin column {
+// 	float: left;
+//     min-height: 1px; 	
+// }
 
 @mixin title-style {
 	font-family: $font-primary;
