@@ -3,9 +3,14 @@
 // For particle background
 document.addEventListener('DOMContentLoaded', function () {
   particleground(document.getElementById('particles'), {
-    dotColor: '#5cbdaa',
-    lineColor: '#5cbdaa',
-    density: 40000,
+    // dotColor: '#5cbdaa',
+    // lineColor: '#5cbdaa',
+    dotColor: '#bdc3c7',
+    lineColor: '#ecf0f1',
+    density: 20000,
+    particleRadius: 5,
+    proximity: 50,
+    lineWidth: 0.5,
     // curvedLines: true,
     parallaxMultiplier: 4
   });

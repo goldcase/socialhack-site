@@ -2,15 +2,16 @@
 #particles {
 	@include full-screen();
 	overflow: hidden;
-	// opacity: 0.5;
+	background-image: linear-gradient(rgba(0, 21, 42, 0.85), rgba(0, 21, 42, 0.65)), url('../media/ox_pulling_cart-min.JPG');
+	@include background-size();
+	position: absolute;
+	top: 0;
 }
 
 #splash {
 	@include full-screen();
 	margin: 0 auto;
 	z-index: 50;
-	background-image: url('../media/village_street.JPG');
-	@include background-size();
 	position: absolute;
 	top: 0;
 	color: $white;
@@ -18,6 +19,11 @@
 
 .vertical-align {
 	@include vertical-align();
+}
+
+h1 {
+	font-family: $font-primary;
+	font-size: 30px;
 }
 
 // Citation: https://zurb.com/expo/lessons/how-to-re-create-top-bar-with-foundation-6
