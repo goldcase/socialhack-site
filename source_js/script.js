@@ -111,4 +111,15 @@ $(document).ready(function(){
       $(".top-bar").removeClass("small").addClass("large");
     }
   });
+  var container = $("html, body");
+
+    $("a").click(function(event) {
+      var anchor = $(this).attr("href");
+
+      container.animate({
+        scrollTop: $(anchor).offset().top
+      }, 1000);
+
+      event.preventDefault();
+    });
 });
