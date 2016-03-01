@@ -43,7 +43,7 @@ body {
 }
 
 .grandmother {
-	background-image: linear-gradient(rgba(41, 33, 2, 0.5), rgba(82, 66, 2, 0.8)), url("../media/grandmother_village-min-1920.JPG");
+	background-image: linear-gradient(rgba(41, 33, 2, 0.5), rgba(82, 66, 2, 0.8)), url("../media/grandmother_village-min-1920.jpg");
 	@include background-size();
 	background-position: center center;
 	position: fixed;
@@ -115,15 +115,15 @@ p {
 
 #more-info {
 	@include full-screen();
-	// background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.3)), url("../media/ox_pulling_cart-min-blur-1920.JPG");
-	background-image: linear-gradient(rgba(0, 10, 21, 0.55), rgba(0, 21, 42, 0.35)), url("../media/ox_pulling_cart-min-blur-1920.JPG");
+	// background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.3)), url("../media/ox_pulling_cart-min-blur-1920.jpg");
+	background-image: linear-gradient(rgba(0, 10, 21, 0.55), rgba(0, 21, 42, 0.35)), url("../media/ox_pulling_cart-min-blur-1920.jpg");
 	@include background-size();
 	background-position: center center;
 }
 
 #prizes {
 	@include full-screen();
-	background-image: linear-gradient(rgba(0, 10, 21, 0.75), rgba(0, 21, 42, 0.55)), url("../media/boy_in_village-1920.JPG");
+	background-image: linear-gradient(rgba(0, 10, 21, 0.75), rgba(0, 21, 42, 0.55)), url("../media/boy_in_village-1920.jpg");
 	@include background-size();
 	background-position: center center;
 }
@@ -138,7 +138,7 @@ p {
 
 #trailer {
 	@include full-screen();
-	background-image: linear-gradient(rgba(41, 33, 2, 0.5), rgba(82, 66, 2, 0.8)), url("../media/seeds_blurred-1920.JPG");
+	background-image: linear-gradient(rgba(41, 33, 2, 0.5), rgba(82, 66, 2, 0.8)), url("../media/seeds_blurred-1920.jpg");
 	@include background-size();
 	background-position: center center;
 
@@ -146,7 +146,7 @@ p {
 
 #judges {
 	@include full-screen();
-	background-image: linear-gradient(rgba(41, 33, 2, 0.5), rgba(82, 66, 2, 0.8)), url("../media/boy_running-1920.JPG");
+	background-image: linear-gradient(rgba(41, 33, 2, 0.5), rgba(82, 66, 2, 0.8)), url("../media/boy_running-1920.jpg");
 	@include background-size();
 	background-position: center center;
 }
@@ -234,7 +234,7 @@ footer {
 }
 
 #particles-bg {
-	background-image: linear-gradient(rgba(0, 21, 42, 0.85), rgba(0, 21, 42, 0.65)), url('../media/slum-min-1920.JPG');
+	background-image: linear-gradient(rgba(0, 21, 42, 0.85), rgba(0, 21, 42, 0.65)), url('../media/slum-min-1920.jpg');
 	@include full-screen();
 	@include background-size();
 	background-position: center center;
@@ -246,7 +246,7 @@ footer {
 #particles {
 	@include full-screen();
 	overflow: hidden;
-	// background-image: linear-gradient(rgba(0, 21, 42, 0.85), rgba(0, 21, 42, 0.65)), url('../media/barbed_wire-min-1920.JPG');
+	// background-image: linear-gradient(rgba(0, 21, 42, 0.85), rgba(0, 21, 42, 0.65)), url('../media/barbed_wire-min-1920.jpg');
 	background: none;
 	position: absolute;
 	top: 0;
