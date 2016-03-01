@@ -3,37 +3,25 @@
 // For particle background
 document.addEventListener('DOMContentLoaded', function () {
   particleground(document.getElementById('particles'), {
-    // dotColor: '#5cbdaa',
-    // lineColor: '#5cbdaa',
     dotColor: '#bdc3c7',
     lineColor: '#ecf0f1',
     density: 30000,
     particleRadius: 5,
     proximity: 50,
     lineWidth: 0.5,
-    // curvedLines: true,
     parallaxMultiplier: 3
   });
 
   particleground(document.getElementById('particles-late'), {
-    // dotColor: '#5cbdaa',
-    // lineColor: '#5cbdaa',
     dotColor: '#2980b9',
     lineColor: '#3498db',
     density: 40000,
     particleRadius: 4,
     proximity: 100,
     lineWidth: 0.5,
-    // curvedLines: true,
     parallaxMultiplier: 8
   });
-  // var splash = document.getElementById('splash');
-  // splash.style.marginTop = - splash.offsetHeight + 'px';
 }, false);
-
-// Start Orbit carousel.
-// var prize_orbit_target = $("#prize_orbit_target");
-// var prize_orbit = new Foundation.Orbit(prize_orbit_target, options);
 
 // Start Owl Carousel.
 $(document).ready(function(){
