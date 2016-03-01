@@ -345,6 +345,10 @@ footer {
 		animation-duration: 3s;
 		animation-fill-mode: forwards;
 		animation-name: fadein, spread;
+
+		@include breakpoint(small only) {
+			margin-bottom: -0.5rem;
+		}
 	}	
 
 	.subtitle {
