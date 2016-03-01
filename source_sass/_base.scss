@@ -199,37 +199,67 @@ footer {
 .signal-container {
 	position: absolute;
 	top: 85vh;
-	left: 50vw;
+	// left: 50vw;
+	width: 100vw;
 
 	z-index: 55;
 }
 
 .signal-down {
 	position: relative;
+	top: -40px;
 	opacity: 0;
 	color: $white;
 	cursor: pointer;
 
 	animation-delay: 4s;
-	animation-duration: 3s;
-	animation-fill-mode: forwards;
-	animation-name: fadein;
+	animation-duration: 2s;
+	// animation-fill-mode: forwards;
+	animation-name: fade-move;
 	animation-iteration-count: infinite;
-	animation-direction: alternate;
-
-	@keyframes fadein {
-		from {
-			opacity: 0;
-		}
-
-		to {
-			opacity: 0.8;
-			top: 15px;
-		}
-	}
-
+	-webkit-animation-timing-function: linear; /* Chrome, Safari, Opera */
+    animation-timing-function: linear;
+	// animation-direction: alternate;
 	@include breakpoint(small only) {
 		font-size: 2rem;
+	}
+}
+
+@keyframes fade-move {
+	0% {
+		opacity: 0;
+		top: -40px;
+	}
+
+	50% {
+		opacity: 0.8;
+		top: -20px;
+	}
+
+	100% {
+		// opacity: 0.8;
+		// top: 0px;
+		opacity: 0;
+		top: 0px;
+	}
+}
+
+@-webkit-keyframes fade-move {
+	0% {
+		opacity: 0;
+		top: -40px;
+	}
+
+	50% {
+		opacity: 0.8;
+		top: -20px;
+	}
+
+	100% {
+		// opacity: 0.8;
+		// top: 0px;
+		opacity: 0;
+		top: 0px;
 	}
 }
 
@@ -243,6 +273,32 @@ footer {
 }
 
 // Particle effect CSS.
+#particles-late {
+	@include full-screen();
+	overflow: hidden;
+	// background-image: linear-gradient(rgba(0, 21, 42, 0.85), rgba(0, 21, 42, 0.65)), url('../media/barbed_wire-min-1920.jpg');
+	background: none;
+	position: absolute;
+	top: 0;
+
+	opacity: 0;
+
+	animation-delay: 5s;
+	animation-duration: 7s;
+	animation-fill-mode: forwards;
+	animation-name: fadein;
+
+	@keyframes fadein {
+		from {
+			opacity: 0;
+		}
+
+		to {
+			opacity: 1;
+		}
+	}
+}
+
 #particles {
 	@include full-screen();
 	overflow: hidden;
@@ -253,7 +309,7 @@ footer {
 
 	opacity: 0;
 
-	animation-duration: 5s;
+	animation-duration: 7s;
 	animation-fill-mode: forwards;
 	animation-name: fadein;
 
@@ -286,7 +342,7 @@ footer {
 		position: relative;
 		// top: -35px;
 
-		animation-delay: 1.5s;
+		// animation-delay: 1.5s;
 		animation-duration: 3s;
 		animation-fill-mode: forwards;
 		animation-name: fadein, spread;
@@ -295,12 +351,12 @@ footer {
 	.subtitle {
 		font-family: $font-primary;
 		font-size: 1rem;
-		letter-spacing: 0.5rem;
+		letter-spacing: 0.2rem;
 		opacity: 0;
 		position: relative;
 
-		animation-delay: 2s;
-		animation-duration: 3.5s;
+		animation-delay: 1s;
+		animation-duration: 4.5s;
 		animation-fill-mode: forwards;
 		animation-name: fadein, spread-wide;
 
@@ -309,6 +365,16 @@ footer {
 			letter-spacing: 2vmin;
 			top: -8px;
 		}
+	}
+
+	.register {
+		position: relative;
+		opacity: 0;
+
+		animation-delay: 3s;
+		animation-duration: 2s;
+		animation-fill-mode: forwards;
+		animation-name: fadein;
 	}
 
 	@keyframes fadein {
@@ -334,7 +400,7 @@ footer {
 
 	@keyframes spread-wide {
 		from {
-			letter-spacing: 0.5rem;
+			letter-spacing: 0.2rem;
 		}
 
 		to {

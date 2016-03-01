@@ -7,12 +7,25 @@ document.addEventListener('DOMContentLoaded', function () {
     // lineColor: '#5cbdaa',
     dotColor: '#bdc3c7',
     lineColor: '#ecf0f1',
-    density: 20000,
+    density: 30000,
     particleRadius: 5,
     proximity: 50,
     lineWidth: 0.5,
     // curvedLines: true,
     parallaxMultiplier: 4
+  });
+
+  particleground(document.getElementById('particles-late'), {
+    // dotColor: '#5cbdaa',
+    // lineColor: '#5cbdaa',
+    dotColor: '#2980b9',
+    lineColor: '#3498db',
+    density: 40000,
+    particleRadius: 4,
+    proximity: 100,
+    lineWidth: 0.5,
+    // curvedLines: true,
+    parallaxMultiplier: 6
   });
   // var splash = document.getElementById('splash');
   // splash.style.marginTop = - splash.offsetHeight + 'px';
