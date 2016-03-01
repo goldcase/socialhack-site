@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
     proximity: 50,
     lineWidth: 0.5,
     // curvedLines: true,
-    parallaxMultiplier: 4
+    parallaxMultiplier: 3
   });
 
   particleground(document.getElementById('particles-late'), {
@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function () {
     proximity: 100,
     lineWidth: 0.5,
     // curvedLines: true,
-    parallaxMultiplier: 6
+    parallaxMultiplier: 8
   });
   // var splash = document.getElementById('splash');
   // splash.style.marginTop = - splash.offsetHeight + 'px';
