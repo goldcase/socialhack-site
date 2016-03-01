@@ -26,10 +26,21 @@ document.addEventListener('DOMContentLoaded', function () {
 // Start Owl Carousel.
 $(document).ready(function(){
   $(".owl-carousel").owlCarousel({
-    "items": 1,
-    "navigation": true,
-    "responsive": true,
-    "autoPlay": true
+    center: true,
+    items: 3,
+    itemsMobile: [479, 1],
+    itemsTablet: [979, 3],
+    navigation: true,
+    responsiveClass: true,
+    responsive: {
+      0: {
+        items: 1
+      },
+      640 : {
+        items: 3
+      }
+    },
+    autoPlay: true
   });
 
   /*

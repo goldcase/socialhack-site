@@ -113,6 +113,14 @@ p {
 	}
 }
 
+.full-screen {
+	@include full-screen();
+}
+
+.full-width {
+	width: 100vw;
+}
+
 #more-info {
 	@include full-screen();
 	// background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.3)), url("../media/ox_pulling_cart-min-blur-1920.jpg");
