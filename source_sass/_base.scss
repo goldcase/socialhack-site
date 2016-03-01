@@ -198,6 +198,43 @@ footer {
 	font-family: $font-primary;
 }
 
+// For the caret.
+.signal-container {
+	position: absolute;
+	top: 85vh;
+	left: 50vw;
+
+	z-index: 55;
+}
+
+.signal-down {
+	position: relative;
+	opacity: 0;
+	color: $white;
+	cursor: pointer;
+
+	animation-duration: 3s;
+	animation-fill-mode: forwards;
+	animation-name: fadein;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+
+	@keyframes fadein {
+		from {
+			opacity: 0;
+		}
+
+		to {
+			opacity: 0.8;
+			top: 15px;
+		}
+	}
+
+	@include breakpoint(small only) {
+		font-size: 2rem;
+	}
+}
+
 #particles-bg {
 	background-image: linear-gradient(rgba(0, 21, 42, 0.85), rgba(0, 21, 42, 0.65)), url('../media/slum-min-1920.JPG');
 	@include full-screen();
@@ -270,6 +307,9 @@ footer {
 }
 
 // Class styles for convenience.
+.horizontal-align {
+	@include horizontal-align();
+}
 
 .vertical-align {
 	@include vertical-align();
