@@ -248,10 +248,10 @@ footer {
 		text-align: center;
 
 		position: relative;
-		top: -50px;
+		top: -35px;
 
-		animation-delay: 2s;
-		animation-duration: 3s;
+		animation-delay: 0.5s;
+		animation-duration: 2s;
 		animation-fill-mode: forwards;
 		animation-name: fadein;
 	}	
@@ -259,7 +259,7 @@ footer {
 	@keyframes fadein {
 		from {
 			opacity: 0;
-			top: -50px;
+			top: -35px;
 		}
 
 		to {
@@ -355,13 +355,13 @@ footer {
     
         a {
           color: #fff;
+		}
 
-          .active {
+        a.active {
 			color: $flat-orange-2;
-          }
-	    }
-    }
-  }
+        }
+     }
+   }
 }
 
 .menu-text {

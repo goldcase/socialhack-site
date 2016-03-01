@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
     dotColor: '#bdc3c7',
     lineColor: '#ecf0f1',
     density: 20000,
-    particleRadius: 3,
+    particleRadius: 5,
     proximity: 50,
     lineWidth: 0.5,
     // curvedLines: true,
@@ -83,11 +83,13 @@ $(document).ready(function(){
       // if (cur_top > currentVal && cur_top < sum_top_height) {
       if (currentVal < screen_bottom && screen_bottom < sum_top_height) {
         console.log("activating " + Number(idx+1));
-        $(nav_children).removeClass("active");
-        $(nav_children[idx+1]).addClass("active");
+        // $(nav_children).removeClass("active");
+        // $(nav_children[idx+1]).addClass("active");
 
-        // $(anchor_children).removeClass("active");
+        $(anchor_children).removeClass("active");
         // $(anchor_children[idx+1]).addClass("active");
+        $(anchor_children[idx]).addClass("active");
+
       }
       //  else {
       //  $(nav_children[idx+1]).removeClass("active");
@@ -100,7 +102,7 @@ $(document).ready(function(){
   $(document).on("scroll", function() {
     changePositionIndicator();
 
-    if ($(document).scrollTop() > 80) {
+    if ($(document).scrollTop() > 54) {
       console.log("Scroll event detected.");
       $(".title-bar").removeClass("large").addClass("small");
       $(".top-bar").removeClass("large").addClass("small");
