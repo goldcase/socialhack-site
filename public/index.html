@@ -13,8 +13,8 @@
 </head>
 
 <body>
-  <!-- Hamburglar menu for small screens. -->
 
+  <!-- Navigation bar. -->
   <div class="top-bar" id="main-menu">
     <div class="top-bar-left">
       <div class="dropdown menu" data-dropdown-menu>
@@ -32,34 +32,33 @@
       </ul>
     </div>
   </div>
+  <!-- Hamburger menu for small screens. -->
   <div class="title-bar" data-responsive-toggle="main-menu" data-hide-for="medium">
     <button class="menu-icon" type="button" data-toggle></button>
     <div class="title-bar-title">Menu</div>
   </div>
- <!--  
-  <ul class="horizontal menu" data-magellan>
-    <li class="menu-text">SocialHack</li>
-    <li class="menu-text">APPLY NOW</li>
-    <li><a href="#">ABOUT</a></li>
-    <li><a href="#">ITINERARY</a></li>
-    <li><a href="#">PRIZES</a></li>
-    <li><a href="#">MENTORS</a></li>
-    <li><a href="#">JUDGES</a></li>
-    <li><a href="#">SPONSORS</a></li>
-    <li><a href="#">CONTACT US</a></li>
-  </ul> -->
+
+<!-- Content container. -->
 <div class="container">
+  <!-- Fixed background for quotes. -->
   <div class="grandmother"></div>
+  <!-- Particle container. -->
   <div id="particles-bg"></div>
+  <!-- Foreground particles. -->
   <div id="particles"></div>
+  <!-- Background, fade-in particles container. -->
   <div id="particles-late"></div>
+  <!-- Splash section container. -->
   <div id="splash">
     <div class="row text-center vertical-align">
       <h1>
         SocialHack  
       </h1>
       <h3 class="subtitle">
-        APRIL 8-10, 2016
+        OCTOBER 21-23, 2016
+      </h3>
+      <h3 class="subtitle">
+        UIUC
       </h3>
       <div class="register">
         <a href="#" class="button">
@@ -70,254 +69,266 @@
     </div>
   </div>
 
+  <!-- Signal users to scroll down. -->
   <div class="signal-container">
     <a href="#about">
       <i class="fa fa-chevron-down horizontal-align signal-down fa-3x"></i>
     </a>
   </div>
 
+  <!-- Main content container. -->
   <div class="main">
-  <section id="about">
-    <div class="section-content">
-    <div class="row">
-      <h2>ABOUT</h2>
-      <div class="columns small-12 large-4">
-        <h3>DO WELL</h3>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec hendrerit elit, sed malesuada risus. Aenean luctus sapien luctus laoreet volutpat. Suspendisse vel efficitur mauris, et accumsan metus.
-        </p>
-      </div>
-      <div class="columns small-12 large-4">
-        <h3>DO GOOD</h3>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec hendrerit elit, sed malesuada risus. Aenean luctus sapien luctus laoreet volutpat. Suspendisse vel efficitur mauris, et accumsan metus.
-        </p>
-      </div>
-      <div class="columns small-12 large-4">
-        <h3>HAVE FUN</h3>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec hendrerit elit, sed malesuada risus. Aenean luctus sapien luctus laoreet volutpat. Suspendisse vel efficitur mauris, et accumsan metus.
-        </p>
-      </div>
-      </div>
-    </div>
-  </section>
 
-  <section class="quote">
-    <div class="section-content">
-      <div class="column row vertical-align">
-        DO COOL THINGS THAT MATTER
-      </div>
-    </div>
-  </section>
-
-  <section id="more-info">
-    <div class="row vertical-align">
-      <h2>
-        DETAILS
-      </h2>
-      <ul class="vertical menu" data-accordion-menu>
-        <li>
-        <a href="#">SCHEDULE</a>
-        <ul>
+    <!-- About section. -->
+    <section id="about">
+      <div class="section-content">
+      <div class="row">
+        <h2>ABOUT</h2>
+        <div class="columns small-12 large-4">
+          <h3>DO WELL</h3>
           <p>
-            Back in the bad old days when I was running Loudcloud, I thought to myself: how could I have possibly prepared for this? How could I know that half our customers would go out of business? How could I know that it would become impossible to raise money in the private markets? How could I have figured out that there would be 221 IPOs in 2000 and 19 in 2001? Could anybody expect me to achieve a reasonable outcome given those circumstances?
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec hendrerit elit, sed malesuada risus. Aenean luctus sapien luctus laoreet volutpat. Suspendisse vel efficitur mauris, et accumsan metus.
           </p>
+        </div>
+        <div class="columns small-12 large-4">
+          <h3>DO GOOD</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec hendrerit elit, sed malesuada risus. Aenean luctus sapien luctus laoreet volutpat. Suspendisse vel efficitur mauris, et accumsan metus.
+          </p>
+        </div>
+        <div class="columns small-12 large-4">
+          <h3>HAVE FUN</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec hendrerit elit, sed malesuada risus. Aenean luctus sapien luctus laoreet volutpat. Suspendisse vel efficitur mauris, et accumsan metus.
+          </p>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quote bar. -->
+    <section class="quote">
+      <div class="section-content">
+        <div class="column row vertical-align">
+          DO COOL THINGS THAT MATTER
+        </div>
+      </div>
+    </section>
+
+    <!-- Details section. -->
+    <section id="more-info">
+      <div class="row vertical-align">
+        <h2>
+          DETAILS
+        </h2>
+        <ul class="vertical menu" data-accordion-menu>
+          <li>
+          <!-- To be updated. -->
+          <a href="#">SCHEDULE</a>
+          <ul>
+            <p>
+              Back in the bad old days when I was running Loudcloud, I thought to myself: how could I have possibly prepared for this? How could I know that half our customers would go out of business? How could I know that it would become impossible to raise money in the private markets? How could I have figured out that there would be 221 IPOs in 2000 and 19 in 2001? Could anybody expect me to achieve a reasonable outcome given those circumstances?
+            </p>
+          </ul>
+          </li>
+
+          <li>
+            <a href="#">FAQ</a>
+            <ul>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec imperdiet neque. Sed quis urna faucibus, egestas risus vel, elementum velit. Donec auctor neque sit amet justo suscipit, id viverra turpis rhoncus. Mauris porta, erat non faucibus finibus, erat nibh tincidunt ligula, ut pretium tellus mauris id tellus. Quisque aliquet, eros a rhoncus euismod, nisi tortor interdum neque, sit amet porta neque nulla a ex. Donec vel consectetur velit. Fusce vitae augue tortor.
+            </p>
+            <p>
+              Mauris nec purus consectetur ligula facilisis vulputate. Donec ullamcorper magna at neque malesuada, in ultricies massa ultrices. Aenean laoreet commodo metus. Nulla placerat porttitor erat, sed accumsan mauris fermentum at. Interdum et malesuada fames ac ante ipsum primis in faucibus. Curabitur quis quam sit amet libero imperdiet euismod. Sed tortor elit, auctor eget cursus sit amet, tincidunt vitae velit.
+            </p>
+            </ul>
+          </li>
+
+          <li>
+            <a href="#">RULES</a>
+            <ul>
+            <p>
+              Nulla iaculis dapibus ipsum, ac commodo lacus consectetur sit amet. Nulla id arcu tincidunt, dictum quam eget, tincidunt tellus. Fusce nec arcu quis leo pulvinar rhoncus. Vivamus vitae mollis turpis. Sed sollicitudin justo vitae tortor sollicitudin, in pulvinar orci condimentum. Donec et feugiat libero, vitae ultricies dolor. Donec ut hendrerit orci, a aliquet lectus. Phasellus nec tortor nec odio vulputate tincidunt vel ac ex. Phasellus sed lorem porta, venenatis sem nec, facilisis metus. Vestibulum metus orci, ornare a scelerisque ut, euismod non quam. Sed aliquam nunc eget enim placerat, interdum porta lectus dapibus. Pellentesque urna lacus, condimentum eu urna feugiat, finibus feugiat justo. Sed pretium eros ut lorem semper, at bibendum leo pharetra.
+            </p>
+            <p>
+              Cras eu mauris bibendum, tincidunt odio eu, blandit urna. In hac habitasse platea dictumst. Duis pretium quam malesuada, semper neque eget, molestie enim. Donec enim nibh, auctor et venenatis quis, consectetur sed nisl. Nam sagittis eros eu ipsum tempus cursus. Pellentesque nec eros a lacus pharetra cursus a lobortis nisi. Nulla facilisi. Cras mollis cursus metus nec pulvinar. Aliquam congue laoreet orci eget porta.
+            </p>
+            </ul>
+          </li>
         </ul>
-        </li>
+      </div>
+    </section>
 
-        <li>
-          <a href="#">FAQ</a>
-          <ul>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec imperdiet neque. Sed quis urna faucibus, egestas risus vel, elementum velit. Donec auctor neque sit amet justo suscipit, id viverra turpis rhoncus. Mauris porta, erat non faucibus finibus, erat nibh tincidunt ligula, ut pretium tellus mauris id tellus. Quisque aliquet, eros a rhoncus euismod, nisi tortor interdum neque, sit amet porta neque nulla a ex. Donec vel consectetur velit. Fusce vitae augue tortor.
-          </p>
-          <p>
-            Mauris nec purus consectetur ligula facilisis vulputate. Donec ullamcorper magna at neque malesuada, in ultricies massa ultrices. Aenean laoreet commodo metus. Nulla placerat porttitor erat, sed accumsan mauris fermentum at. Interdum et malesuada fames ac ante ipsum primis in faucibus. Curabitur quis quam sit amet libero imperdiet euismod. Sed tortor elit, auctor eget cursus sit amet, tincidunt vitae velit.
-          </p>
-          </ul>
-        </li>
+    <!-- Quote bar. -->
+    <section class="quote">
+      <div class="section-content">
+        <div class="column row vertical-align">
+        FORTUNE FAVORS THE BOLD
+        </div>
+      </div>
+    </section>
 
-        <li>
-          <a href="#">RULES</a>
-          <ul>
-          <p>
-            Nulla iaculis dapibus ipsum, ac commodo lacus consectetur sit amet. Nulla id arcu tincidunt, dictum quam eget, tincidunt tellus. Fusce nec arcu quis leo pulvinar rhoncus. Vivamus vitae mollis turpis. Sed sollicitudin justo vitae tortor sollicitudin, in pulvinar orci condimentum. Donec et feugiat libero, vitae ultricies dolor. Donec ut hendrerit orci, a aliquet lectus. Phasellus nec tortor nec odio vulputate tincidunt vel ac ex. Phasellus sed lorem porta, venenatis sem nec, facilisis metus. Vestibulum metus orci, ornare a scelerisque ut, euismod non quam. Sed aliquam nunc eget enim placerat, interdum porta lectus dapibus. Pellentesque urna lacus, condimentum eu urna feugiat, finibus feugiat justo. Sed pretium eros ut lorem semper, at bibendum leo pharetra.
-          </p>
-          <p>
-            Cras eu mauris bibendum, tincidunt odio eu, blandit urna. In hac habitasse platea dictumst. Duis pretium quam malesuada, semper neque eget, molestie enim. Donec enim nibh, auctor et venenatis quis, consectetur sed nisl. Nam sagittis eros eu ipsum tempus cursus. Pellentesque nec eros a lacus pharetra cursus a lobortis nisi. Nulla facilisi. Cras mollis cursus metus nec pulvinar. Aliquam congue laoreet orci eget porta.
-          </p>
-          </ul>
-        </li>
-      </ul>
-    </div>
-  </section>
 
-  <section class="quote">
+    <!-- Prizes section. -->
+    <section id="prizes">
+      <div class="section-content">
+      <div class="vertical-align">
+        <h2>PRIZES</h2>
+        <div class="owl-carousel horizontal-align full-width">
+            <div class="prize-tile">
+              <h3>FIRST PLACE</h3>
+                <ul>
+                  <li class="money">$3,000 in prize money</li>
+                  <li>Do I wanna know</li>
+                  <li>If this feeling flows both ways</li>
+                  <li>Sad to see you go, was sorta hopin' that you'd stay</li>
+                </ul>
+            </div>
+             <div class="prize-tile">
+              <h3>SECOND PLACE</h3>
+                <ul>
+                  <li class="money">$3,000 in prize money</li>
+                  <li>Maybe I'm too busy being yours to fall for somebdy new</li>
+                  <li>Now I thought it through</li>
+                  <li>Crawlin back to you</li>
+                </ul>
+            </div>
+           <div class="prize-tile">
+              <h3>THIRD PLACE</h3>
+                <ul>
+                  <li class="money">$3,000 in prize money</li>
+                  <li>So have you got the guts?</li>
+              </ul>
+            </div>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quote bar. -->
+    <section class="quote">
     <div class="section-content">
       <div class="column row vertical-align">
-      FORTUNE FAVORS THE BOLD
+          EXECUTION IS EVERYTHING
       </div>
     </div>
-  </section>
+    </section>
 
-
-  <section id="prizes">
+    <!-- Trailer section. -->
+    <section id="trailer">
     <div class="section-content">
     <div class="vertical-align">
-      <h2>PRIZES</h2>
-      <div class="owl-carousel horizontal-align full-width">
-          <div class="prize-tile">
-            <h3>FIRST PLACE</h3>
-              <ul>
-                <li class="money">$3,000 in prize money</li>
-                <li>Do I wanna know</li>
-                <li>If this feeling flows both ways</li>
-                <li>Sad to see you go, was sorta hopin' that you'd stay</li>
-              </ul>
-          </div>
-           <div class="prize-tile">
-            <h3>SECOND PLACE</h3>
-              <ul>
-                <li class="money">$3,000 in prize money</li>
-                <li>Maybe I'm too busy being yours to fall for somebdy new</li>
-                <li>Now I thought it through</li>
-                <li>Crawlin back to you</li>
-              </ul>
-          </div>
-         <div class="prize-tile">
-            <h3>THIRD PLACE</h3>
-              <ul>
-                <li class="money">$3,000 in prize money</li>
-                <li>So have you got the guts?</li>
-            </ul>
-          </div>
-      </div>
+      <h2>
+        TRAILER
+      </h2>
+      <div class="flex-video widescreen">
+        <video src="./media/madhu_video.mp4" type="video/mp4" controls></video>
       </div>
     </div>
-  </section>
-
-  <section class="quote">
-  <div class="section-content">
-    <div class="column row vertical-align">
-        EXECUTION IS EVERYTHING
     </div>
-  </div>
-  </section>
+    </section>
 
-  <section id="trailer">
-  <div class="section-content">
-  <div class="vertical-align">
-    <h2>
-      TRAILER
-    </h2>
-    <div class="flex-video widescreen">
-      <video src="./media/madhu_video.mp4" type="video/mp4" controls></video>
-    </div>
-  </div>
-  </div>
-  </section>
-
-  <section class="quote">
-  <div class="section-content">
-    <div class="column row vertical-align">
-      RISE AND GRIND
-    </div>
-  </div>
-  </section>
-
-  <section id="judges">
+    <!-- Quote bar. -->
+    <section class="quote">
     <div class="section-content">
-      <div class="vertical-align">
-        <h2>JUDGES</h2>
-        <div class="row">
-
-          <div class="column small-12 medium-6 large-3">
-            <a data-open="madhu_modal">
-              <img src="./media/madhu_thumbnail.png" alt="Professor Madhu Viswanathan" class="grayscale thumbnail">
-            </a>
-            <div class="reveal" id="madhu_modal" data-reveal>
-              <button class="close-button" data-close aria-label="Close modal" type="button">
-                <span aria-hidden="true">&times;</span>
-              </button>
-              <img src="./media/madhu.jpg" alt="Professor Madhu Viswanathan">
-            </div>
-          </div>
-
-          <div class="column small-12 medium-6 large-3">
-            <a data-open="madhu_modal">
-              <img src="./media/madhu_thumbnail.png" alt="Professor Madhu Viswanathan" class="grayscale thumbnail">
-            </a>
-            <div class="reveal" id="madhu_modal" data-reveal>
-              <button class="close-button" data-close aria-label="Close modal" type="button">
-                <span aria-hidden="true">&times;</span>
-              </button>
-              <img src="./media/madhu.jpg" alt="Professor Madhu Viswanathan">
-            </div>
-          </div>
-          
-          <div class="column small-12 medium-6 large-3">
-            <a data-open="madhu_modal">
-              <img src="./media/madhu_thumbnail.png" alt="Professor Madhu Viswanathan" class="grayscale thumbnail">
-            </a>
-            <div class="reveal" id="madhu_modal" data-reveal>
-              <button class="close-button" data-close aria-label="Close modal" type="button">
-                <span aria-hidden="true">&times;</span>
-              </button>
-              <img src="./media/madhu.jpg" alt="Professor Madhu Viswanathan">
-            </div>
-          </div>
-
-          <div class="column small-12 medium-6 large-3">
-            <a data-open="madhu_modal">
-              <img src="./media/madhu_thumbnail.png" alt="Professor Madhu Viswanathan" class="grayscale thumbnail">
-            </a>
-            <div class="reveal" id="madhu_modal" data-reveal>
-              <button class="close-button" data-close aria-label="Close modal" type="button">
-                <span aria-hidden="true">&times;</span>
-              </button>
-              <img src="./media/madhu.jpg" alt="Professor Madhu Viswanathan">
-            </div>
-          </div>
-          
-        </div>
+      <div class="column row vertical-align">
+        RISE AND GRIND
       </div>
     </div>
-  </section>
+    </section>
 
-  <section id="hosts">
-    <div class="section-content">
-      <div class="vertical-align">
-        <h2>HOSTED BY</h2>
-        <div class="row">
-          <div class="column small-12 medium-6 large-6">
-            <img src="./media/ewob_logo.png" alt="Entrepreneurs Without Borders" class="grayscale">
-          </div>
-          <div class="column small-12 medium-6 large-6">
-            <img src="./media/founders_logo.png" alt="Entrepreneurs Without Borders" class="grayscale">
+    <!-- Judges section. -->
+    <section id="judges">
+      <div class="section-content">
+        <div class="vertical-align">
+          <h2>JUDGES</h2>
+          <div class="row">
+
+            <div class="column small-12 medium-6 large-3">
+              <a data-open="madhu_modal">
+                <img src="./media/madhu_thumbnail.png" alt="Professor Madhu Viswanathan" class="grayscale thumbnail">
+              </a>
+              <div class="reveal" id="madhu_modal" data-reveal>
+                <button class="close-button" data-close aria-label="Close modal" type="button">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+                <img src="./media/madhu.jpg" alt="Professor Madhu Viswanathan">
+              </div>
+            </div>
+
+            <div class="column small-12 medium-6 large-3">
+              <a data-open="madhu_modal">
+                <img src="./media/madhu_thumbnail.png" alt="Professor Madhu Viswanathan" class="grayscale thumbnail">
+              </a>
+              <div class="reveal" id="madhu_modal" data-reveal>
+                <button class="close-button" data-close aria-label="Close modal" type="button">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+                <img src="./media/madhu.jpg" alt="Professor Madhu Viswanathan">
+              </div>
+            </div>
+            
+            <div class="column small-12 medium-6 large-3">
+              <a data-open="madhu_modal">
+                <img src="./media/madhu_thumbnail.png" alt="Professor Madhu Viswanathan" class="grayscale thumbnail">
+              </a>
+              <div class="reveal" id="madhu_modal" data-reveal>
+                <button class="close-button" data-close aria-label="Close modal" type="button">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+                <img src="./media/madhu.jpg" alt="Professor Madhu Viswanathan">
+              </div>
+            </div>
+
+            <div class="column small-12 medium-6 large-3">
+              <a data-open="madhu_modal">
+                <img src="./media/madhu_thumbnail.png" alt="Professor Madhu Viswanathan" class="grayscale thumbnail">
+              </a>
+              <div class="reveal" id="madhu_modal" data-reveal>
+                <button class="close-button" data-close aria-label="Close modal" type="button">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+                <img src="./media/madhu.jpg" alt="Professor Madhu Viswanathan">
+              </div>
+            </div>
+            
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="contact">
-    <div class="section-content">
-      <div class="vertical-align">
-        <h2>CONTACT US</h2>
-        <div class="row">
-          <h3>Reach out to us. We'd love to hear from you.</h3>
-          <p class="social-icons columns small-12"><i class="fa fa-envelope fa-3x"></i><i class="fa fa-facebook-official fa-3x"></i></p>
+    <!-- Hosts section. -->
+    <section id="hosts">
+      <div class="section-content">
+        <div class="vertical-align">
+          <h2>HOSTED BY</h2>
+          <div class="row">
+            <div class="column small-12 medium-12 large-12">
+              <img src="./media/ewob_logo.png" alt="Entrepreneurs Without Borders" class="grayscale">
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <footer>
-    <p>
-      Some footer things. Copyright, work work work work work work.
-    </p>
-  </footer>
+    <!-- Contact section. -->
+    <section id="contact">
+      <div class="section-content">
+        <div class="vertical-align">
+          <h2>CONTACT US</h2>
+          <div class="row">
+            <h3>Reach out to us. We'd love to hear from you.</h3>
+            <p class="social-icons columns small-12"><i class="fa fa-envelope fa-3x"></i><i class="fa fa-facebook-official fa-3x"></i></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>
+        Some footer things. Copyright, work work work work work work.
+      </p>
+    </footer>
 
   </div>
 
